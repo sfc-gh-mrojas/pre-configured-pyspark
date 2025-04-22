@@ -4,3 +4,4 @@ pandas
 matplotlib
 scikit-learn
 snowflake-cli
+/workspaces/pre-configured-pyspark/snowpark_connect-0.6.0-py3-none-any.whl

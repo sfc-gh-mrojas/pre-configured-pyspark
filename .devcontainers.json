@@ -1,15 +1,13 @@
 {
     "name": "Python 3.12 + Java 17 + PySpark Environment",
-    "build": {
-      "dockerfile": "Dockerfile"
-    },
     "customizations": {
       "vscode": {
         "extensions": [
           "ms-python.python",
           "ms-toolsai.jupyter",
           "redhat.java",
-          "vscjava.vscode-java-debug"
+          "vscjava.vscode-java-debug",
+          "snowflake.snowflake-vsc"
         ],
         "settings": {
           "python.defaultInterpreterPath": "/usr/local/bin/python",

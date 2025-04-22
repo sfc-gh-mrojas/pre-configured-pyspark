@@ -1,0 +1,20 @@
+pip install -r requirements.txt
+
+#!/bin/bash
+
+# Create ~/.snowflake directory if it doesn't exist
+mkdir -p ~/.snowflake
+
+# Create connections.toml file with the specified content
+cat > ~/.snowflake/connections.toml << 'EOF'
+[spark-connect]
+host="sfctest0.snowflakecomputing.com"
+account="sfctest0"
+user="test_spc"
+password="&&&&&&&&"
+warehouse="testwh_spc"
+database="testdb_spc"
+schema="public"
+EOF
+
+echo "Snowflake connections.toml file has been created successfully."
