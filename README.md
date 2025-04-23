@@ -16,9 +16,12 @@ Look for the CloudSpace button an create a new cloud space
 ![Cloudspace](./docs/code_space_button.png)
 
 After your start your cloudspace you will need to wait some time. 
+You might see some messages like:
+![preparing](./docs/preparing.png)
+
 Give it 3-5 minutes for your cloudspace to be ready.
 
-3. Go to the Snowflake Extension to navigate to the config file (~/.snowflake/connections.toml):
+3. Go to the Snowflake Extension to navigate to the config file (~/.snowflake/connections.toml)
 
 ![SnowExtension](./docs/extension.png)
 
@@ -36,4 +39,3 @@ You can copy the settings from the config file option:
 Go to `pyspark-test.py` and run it.
 
 > NOTE: when working with SSO or other external browser authentation, you will see a link displayed in the output. You can click on that link and it will be opened on another tab. That is the link used for authentation. After you link it the address will change to something like https://locahost:5050?token=.... copy that URL, open a terminal and run `wget <copied url>` and enter, this should complete the handshake and establish the connection.
-
