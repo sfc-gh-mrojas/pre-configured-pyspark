@@ -16,5 +16,5 @@
       }
     },
     "features": {},
-    "postCreateCommand": "${containerWorkspaceFolder}/bootstrap.sh"
+    "postCreateCommand": ["/bin/sh","${containerWorkspaceFolder}/bootstrap.sh"]
 }
