@@ -1,6 +1,9 @@
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col
 
+import os
+from snowflake import snowpark_connect
+snowpark_connect.start_session(remote_url=os.environ["SPARK_REMOTE"]) 
 
 # Create SparkSession
 spark = SparkSession.builder \
@@ -33,7 +36,7 @@ table_df.show()
 
 # Read Snowflake table (if using Spark + Snowflake connector)
 # NOTE: Requires proper Snowflake connector configs set
-snowflake_table_df = spark.table("SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.CUSTOMER")
+snowflake_table_df = spark.table("SAMPLE_DATA.TPCH_SF1.CUSTOMER")
 snowflake_table_df.show()
 
 # Stop session

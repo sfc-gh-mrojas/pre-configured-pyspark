@@ -5,7 +5,6 @@ mkdir -p ~/.snowflake
 
 # Create connections.toml file with the specified content
 cat > ~/.snowflake/connections.toml << 'EOF'
-default_connection_name = "spark-connect"
 [spark-connect]
 host="sfctest0.snowflakecomputing.com"
 account="sfctest0"
