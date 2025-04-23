@@ -1,6 +1,4 @@
-pip install -r requirements.txt
-
-#!/bin/bash
+pip install pyspark==3.5.3 snowflake-cli ./snowpark_connect-0.6.0-py3-none-any.whl
 
 # Create ~/.snowflake directory if it doesn't exist
 mkdir -p ~/.snowflake

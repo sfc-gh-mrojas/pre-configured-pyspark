@@ -1,5 +1,4 @@
 {
-    "name": "Python 3.12 + Java 17 + PySpark Environment",
     "customizations": {
       "vscode": {
         "extensions": [
@@ -16,6 +15,6 @@
         }
       }
     },
-    "forwardPorts": [],
-    "postCreateCommand": "pip install -r requirements.txt"
-  }
+    "features": {},
+    "postCreateCommand": "bootstrap.sh"
+}
